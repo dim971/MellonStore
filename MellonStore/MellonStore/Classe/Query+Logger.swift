@@ -9,11 +9,11 @@
 import Foundation
 
 extension Query {
-
-	public func log() {
-    #if DEBUG
-		print("[📣] SELECT \(fetchRequest.entityName ?? "??") WHERE \(fetchRequest.predicate?.description ?? "??") SORT \(String(describing: fetchRequest.sortDescriptors))")
-		print("\n")
-    #endif
-	}
+    
+    public func log() {
+        #if DEBUG
+        print("[📣] SELECT \(fetchRequest.entityName ?? "??") WHERE \(fetchRequest.predicate?.description ?? "??") SORT \(String(describing: fetchRequest.sortDescriptors))")
+        print("\n")
+        #endif
+    }
 }
